@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>TMDB | Movie database</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav>
+        <img src="img/Logo.png" alt="" class="header-logo">
+        <input type="text" class="searchbar" placeholder="What do you want to watch next?">
+        <div>
+            <ul class="nav">
+                <li class="nav-item">Sign in</li>
+                <li class="nav-item">
+                    <img src="img/Menu.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="top-5" class="carousel slide" data-ride="carousel">
+        <!-- <div class="overlay"></div> -->
+        <ol class="carousel-indicators">
+            <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselId" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div class="carousel-text">
+                    <p class="movie-title">John Wick 3 : Parabellum</p>
+                    <div class="imdb-ratings">
+                        <img src="img/imdb.png" alt="" class="pr-1"> 86.0/100
+                        <span class="spacer-35"></span>
+                        <img src="img/tomatoes.png" alt="" class="pr-1"> 97%
+                    </div>
+                    <p class="movie-desc">
+                        John Wick is on the run after killing a member of the international assassins'
+                        guild, and with a $14 million price tag on his head, he is the target of hit
+                        men and women everywhere.
+                    </p>
+                    <a class="btn btn-danger trailer-btn" href="#" role="button">
+                        <img src="img/Play.png" class="pr-2" alt="">
+                        WATCH TRAILER
+                    </a>
+                </div>
+                <img src="img/Poster.png" alt="First slide" style="width: 100%;">
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-text">
+                    <p class="movie-title">The One Piece</p>
+                    <div class="imdb-ratings">
+                        <img src="img/imdb.png" alt="" class="pr-1"> 86.0/100
+                        <span class="spacer-35"></span>
+                        <img src="img/tomatoes.png" alt="" class="pr-1"> 97%
+                    </div>
+                    <p class="movie-desc">
+                        John Wick is on the run after killing a member of the international assassins'
+                        guild, and with a $14 million price tag on his head, he is the target of hit
+                        men and women everywhere.
+                    </p>
+                    <a class="btn btn-danger trailer-btn" href="#" role="button">
+                        <img src="img/Play.png" class="pr-2" alt="">
+                        WATCH TRAILER
+                    </a>
+                </div>
+                <img src="img/one-piece-bg.jpg" alt="First slide" style="width: 100%;">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="main-content">
+        <div class="d-flex justify-content-between">
+            <p class="header-text">Featured Movie</p>
+            <a class="see-more">See More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="movies row mt-5">
+            <div class="col-md-4 movie-card">
+                <img src="img/movie-poster.png" alt="">
+                <span class="small-text location">USA, 2016 - Current</span>
+                <p class="movie-title mb-0">Stranger Things</p>
+                <div class="imdb-ratings">
+                    <img src="img/imdb.png" alt="" class="pr-1"> 86.0/100
+                    <span class="spacer-100"></span>
+                    <img src="img/tomatoes.png" alt="" class="pr-1"> 97%
+                </div>
+                <span class="small-text location">USA, 2016 - Current</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-items">
+            <div class="social-icons"></div>
+            <div class="text-contents"></div>
+            <p class="copyright"></p>
+        </div>
+    </footer>
+
+    <script>
+        $('#navId a').click(e => {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

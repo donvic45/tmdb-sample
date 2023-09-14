@@ -1,0 +1,146 @@
+nav {
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    padding: 20px 100px;
+    display: flex !important;
+    justify-content: space-between;
+}
+
+.nav-item {
+    padding: 0 10px;
+    color: #fff;
+    line-height: 2;
+}
+
+.searchbar {
+    width: 525px;
+    height: 36px;
+    background: transparent;
+    border: 2px solid var(--gray-300, #D1D5DB);
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.searchbar::placeholder {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#top-5 {
+    margin-top: -100px;
+    height: 530px;
+    overflow: hidden;
+}
+
+.header-logo {
+    width: 150px;
+    height: 40px;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: #00000057;
+}
+
+.carousel-control-prev {
+    left: -40px !important;
+}
+
+.carousel-control-next {
+    right: -40px !important;
+}
+
+.carousel-text {
+    position: absolute;
+    left: 8%;
+    top: 30%;
+    height: 50%;
+    width: 100%;
+    z-index: 3;
+    color: #fff;
+}
+
+#top-5 .movie-title {
+    font-size: 46px;
+    font-weight: 700;
+    width: 400px;
+    line-height: 1;
+}
+
+.imdb-ratings {
+    font-size: 12px;
+    line-height: 1;
+    padding: 10px 0 15px 0;
+}
+
+.spacer-35 {
+    display: inline-block;
+    width: 35px;
+}
+
+.movie-desc {
+    font-size: 14px;
+    font-weight: 400;
+    width: 350px;
+    margin-bottom: 15px;
+}
+
+.trailer-btn {
+    padding: 6px 10px;
+    background: #BE123C !important;
+}
+
+.main-content {
+    padding: 50px 100px;
+}
+
+.header-text {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000 !important;
+}
+
+.see-more {
+    font-size: 18px;
+    font-weight: 400;
+    color: #BE123C;
+}
+
+.movie-card {
+    padding-right: 130px !important;
+}
+
+.main-content .movie-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.main-content .small-text {
+    font-size: 12px;
+    color: #9CA3AF;
+    font-weight: 700;
+}
+
+.spacer-100 {
+    display: inline-block;
+    width: 100px;
+}
+
+.main-content .imdb-ratings {
+    padding: 10px 0;
+}
+
+.footer {
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    z-index: 10;
+}
